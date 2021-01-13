@@ -18,7 +18,7 @@ namespace TwinField.Sales.Model.Tests
         {
             var expected = new Money(1325, Currency.USD);
 
-            terminal.BulkScan("A", "B", "C", "D", "A", "B", "A" );
+            terminal.BulkScan("A", "B", "C", "D", "A", "B", "A");
             var actual = terminal.TotalAmount;
 
             Assert.AreEqual(expected, actual);
